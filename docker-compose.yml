@@ -1,0 +1,13 @@
+services:
+  solax-exporter:
+    network_mode: "host"
+    image: prometheus-solaxmodbus-exporter-php
+    restart: always
+    volumes:
+      - ${PWD}/registers.yml:/usr/src/prometheus-solaxmodbus-exporter-php/registers.yml
+    environment:
+      - HOST=XXX.XXX.XXX.XXX
+      - PORT=502
+      - LISTEN_ADDRESS=0.0.0.0:8065
+    ports:
+      - 8065:8065
