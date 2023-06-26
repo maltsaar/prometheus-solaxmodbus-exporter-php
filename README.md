@@ -29,10 +29,10 @@ Make sure to properly set the 3 environment variables in docker-compose.yml
 
 ### Check if it works
 
-`curl localhost:8092/metrics`
+`curl localhost:8065/metrics`
 
 This URL returns data in prometheus text-based format
 
-`curl localhost:8092/json`
+`curl localhost:8065/json`
 
 This URL returns data in json format
