@@ -56,7 +56,7 @@ $http = new React\Http\HttpServer(function (Psr\Http\Message\ServerRequestInterf
     global $inputRegisters;
 
     $path = $request->getUri()->getPath();
-    $logger->info("Got path: \"".$path."\"\n");
+    $logger->info("Got path: \"".$path."\"");
 
     // index page
     if ($path === "/") {
