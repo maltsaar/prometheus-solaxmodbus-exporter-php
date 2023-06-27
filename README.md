@@ -19,20 +19,20 @@ Other Solax inverters should work fine if you correctly define the registers in 
 
 ### Build the container
 
-`docker build . -t prometheus-solaxmodbus-exporter-php`
+```docker build . -t prometheus-solaxmodbus-exporter-php```
 
 ### Running the container
 
 Make sure to properly set the 3 environment variables in docker-compose.yml
 
-`docker compose up -d`
+```docker compose up -d```
 
 ### Check if it works
 
-`curl localhost:8065/metrics`
+```curl localhost:8065/metrics```
 
 This URL returns data in prometheus text-based format
 
-`curl localhost:8065/json`
+```curl localhost:8065/json```
 
 This URL returns data in json format
